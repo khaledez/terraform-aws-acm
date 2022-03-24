@@ -12,6 +12,6 @@ module "acm" {
   domain_aliases  = {
 		"example.org" = ["www.example.org"]
 	}
-  dns_zone_domain = "example.org."
+  route53_zone_id = aws_route53_zone.primary.id
 }
 ```

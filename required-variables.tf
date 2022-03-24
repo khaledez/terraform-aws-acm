@@ -8,7 +8,7 @@ variable "domain_aliases" {
   type        = map(set(string))
 }
 
-variable "dns_zone_domain" {
-  description = "AWS Route53 hosted zone domain, must end with dot(.)"
+variable "route53_zone_id" {
+  description = "AWS Route53 hosted zone id"
   type        = string
 }
